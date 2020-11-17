@@ -92,7 +92,16 @@
 
     <div class="aboutUsImageContainer">
       <div class="imageContainer1">
-        <img class="abtImage1" src="images/abtImage1.webp" alt="aboutUsImg1">
+        <picture>
+          <!-- this is for the desktop verison -->
+          <source media="(min-width:650px)" srcset="images/abtImage1.webp">
+  
+            <!-- this is for the tablet view -->
+          <source media="(min-width:400px)" srcset="images/abtImage1_tab.webp">
+  
+            <!-- This is for the mobile version -->
+          <img class="abtImage1" src="images/abtImage1_mobile.webp" alt="slideImage2"> 
+        </picture>
         <div class="abtText1"> No Compromise on Quality</div>
       </div>
       <div class="imageContainer2">
