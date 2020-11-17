@@ -46,7 +46,16 @@
       </div>
     </div>
     <div class="mySlides">
-      <img class="slideImages2" src="images/slideshow1.webp" alt="slideImage2">
+      <picture>
+        <!-- this is for the desktop verison -->
+        <source media="(min-width:650px)" srcset="images/slideshow1.webp">
+
+          <!-- this is for the tablet view -->
+        <source media="(min-width:400px)" srcset="images/slideshow1_tab.webp">
+
+          <!-- This is for the mobile version -->
+        <img class="slideImages2" src="images/slideshow1_mobile.webp" alt="slideImage2"> 
+      </picture>
       <div class="slideshowTextContainer">
         <div class="slideText3"> SELECT FROM A VARIETY OF TEA MANUFACTURERS</div>
         <div class="slideText4"> From our Largest Collection </div>
